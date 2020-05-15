@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'RobotoHobbees';
+  font-style: normal;
+  font-weight: 400;
+  src: local('RobotoHobbees'), local('RobotoHobbees-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'amitaregular';
+  src: url('../fonts/amita-regular-webfont.woff2') format('woff2'),
+       url('../fonts/amita-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+body {
+    overflow-x: hidden;
+  }
+
+.navbar{
+  width: 100vw
+}
+
+.navbar .nav-link {
+    font-size: 20px;
+    font-family: amitaregular;
+    padding-left: 1.2rem !important;
+    padding-right: 1.2rem !important;
+  }
+  
+.carousel-item {
+    height: 60vh;
+    min-height: 350px;
+    transition:transform .8s ease-in-out!important;
+}
+  
+.carousel-image-1 {
+    background: url('../img/1.jpg');
+    background-size: cover;  
+    padding-top: 150px; 
+}
+  
+.carousel-image-2 {
+    background: url('../img/2.jpg');
+    background-size: cover;
+ }
+  
+.carousel-image-3 {
+    background: url('../img/3.jpg');
+    background-size: cover;
+ }
+
+  /* PAGE HEADER */
+ #page-header{
+    height: 150px;
+    background: url('../img/bg2.jpg');
+    background-position: 0 -360px;
+    background-attachment: fixed;
+    color: rgb(122, 105, 91);
+    font-family: amitaregular;
+    margin-top: 125px;
+    padding-top: 10px;
+    border-bottom: 1px #eee solid;
+ }
+
+  #home-heading {
+    position: relative;
+    min-height: 320px;
+    background: url('../img/mandala.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+  }
+
+  #home-icons i, #contact-icons i {
+    background-color: #eba4b6;
+    color: #fff;
+    padding: 1rem;
+    margin-bottom: 15px;
+ }
+
+/*GUIDE SECTION*/
+
+#guide h2{
+  font-family:amitaregular ;
+  font-size: 30px;
+  color: #eba4b6;
+}
+
+#guide p{
+  font-family:RobotoHobbees ;
+  font-size: 20px;
+  line-height: 1.8em;
+}
+
+.pagination li:hover{
+  cursor: pointer;
+}
+
+.pagination li {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination li.active {
+  background-color:#b4fcc4;
+  color: rgb(137, 163, 134);
+  border: 1px solid #b1fac1;
+}
+
+.pagination li:hover:not(.active) {
+  background-color: #ddd;
+}
+
+/*FOOTER*/
+#main-footer{
+    font-family: amitaregular;
+}
+
+#calendar {
+  max-width: 800px;
+  margin: 40px auto;  
+}
+
+@media(max-width: 768px) {
+  
+  .flex-items {
+      flex-direction: column;
+  }
+
+  .team img {
+      width: 70%;
+  }
+}
